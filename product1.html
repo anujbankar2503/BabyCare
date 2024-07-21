@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Products-Shopping Cart</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="/style1.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/gif" href="/my-img/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    
+.d-block_w-100{
+    width: 100%;
+    object-fit:fill;
+    /* opacity: 0.9; */
+}  
+
+
+.container-fluid img{
+
+  width:30px;
+  height:30px;
+  padding: 3px;
+  margin:4px;
+}
+
+.container-fluid img{
+
+    width: 82px;
+    filter: invert(1);
+    height: 49px;
+    margin-left: -2px;
+    margin-bottom: -12px;
+    margin-top: -15px;
+}
+
+
+.navbar-nav.me-auto.mb-2.mb-lg-0{
+
+    margin-left: 23px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.nav-link{
+
+    margin: 0px 10px;
+    color: rgb(246, 240, 240);
+
+}
+
+.nav-link:hover{
+
+    color: yellow;
+
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+
+        /* width:150px; */
+        height: 60px;
+        
+}
+
+.begin{
+    font-weight: bold;
+    color: rgb(30, 26, 26);
+    font-size: 18px;
+}
+
+.begin.end{
+    font-weight: bold;
+    color:wheat;
+    font-size: 18px;
+}
+
+.h2_2{
+
+    color:snow;
+}
+</style>
+
+</style>
+
+<body>
+    <!-- header  -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <div class="logo_1">
+                <img src="/my-img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <a href="index.html" class="page">Home</a>
+                <a href="about.html" class="page">About Us</a>
+                <a href="product1.html" class="page">Products</a>
+                <a href="contact.html" class="page">Contact Us</a>
+            </div>
+            <a href="#" class="logo">BabyCare</a>
+                <!-- Cart Icon -->
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- Contents -->
+                    <div class="cart-contents">
+
+                    </div>
+                     <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                 <!-- Buy Button -->
+                 <button type="button" class="btn-buy">Buy Now</button>
+                 <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+
+             </div>
+        </div>
+
+
+    </header>
+
+    <!-- Shop -->
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="/my-img/products/shirt1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Placket Shirt</h2>
+                
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹567.15</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+             </div>
+       
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="/my-img/products/shirt2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cream-Yellow Shirt </h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹550.03</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+             </div>
+           
+            <!-- Box 3 -->
+            <div class="product-box">
+                    <img src="/my-img/products/shirt3.webp" alt="" class="product-img">
+                        <h2 class="product-title">Sky-Blue Pattern</h2>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                        <span class="price">₹605.08</span>
+                        <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 4 -->
+             <div class="product-box">
+                    <img src="/my-img/products/shirt4.webp" alt="" class="product-img">
+                    <h2 class="product-title">Checks Shirt</h2>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    </br>
+                    <span class="price">₹530.18</span>
+                    <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 5 -->
+             <div class="product-box">
+                <img src="/my-img/products/shirt5.webp" alt="" class="product-img">
+                <h2 class="product-title">Floral Print Shirt</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹440.57</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 6 -->
+             <div class="product-box">
+                <img src="/my-img/products/shirt6.webp" alt="" class="product-img">
+                    <h2 class="product-title">Typograpy-Print Tee</h2>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                    <span class="price">₹500.39</span>
+                    <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+        </div>
+
+             <!-- Box 7 -->
+             <div class="product-box">
+                <img src="/my-img/products/shirt7.webp" alt="" class="product-img">
+                    <h2 class="product-title">Classic Striped Shirt</h2>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i></br>
+                    <span class="price">₹480.90</span>
+                    <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+        </div>
+
+             <!-- Box 8 -->
+             <div class="product-box">
+                <img src="/my-img/products/shirt8.webp" alt="" class="product-img">
+                    <h2 class="product-title">Polka Print Shirt</h2>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                    <span class="price">₹543.08</span>
+                    <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+        </div>
+
+            <!-- Box 9 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf1.webp" alt="" class="product-img">
+                <h2 class="product-title">Watermelon Print</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹540.12</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 10 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf2.webp" alt="" class="product-img">
+                <h2 class="product-title">Floral Print- Aqua</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹534.45</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 11 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf3.webp" alt="" class="product-img">
+                <h2 class="product-title">Printed Frock-Sea Green</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹590.34</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 12 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf4.webp" alt="" class="product-img">
+                <h2 class="product-title">Rainbow Print-White & Pink</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹600.02</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 13 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf5.webp" alt="" class="product-img">
+                <h2 class="product-title">Floral Print-Beige</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹615.44</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 14 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf6.webp" alt="" class="product-img">
+                <h2 class="product-title">Polka Dot Print-Pink</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹566.54</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 15 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf7.webp" alt="" class="product-img">
+                <h2 class="product-title">IceCream Print</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+               
+                <span class="price">₹622.37</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 16 -->
+            <div class="product-box">
+                <img src="/my-img/products/gf8.webp" alt="" class="product-img">
+                <h2 class="product-title">Heart Print-R&W</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹559.89</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            
+            <!-- Box 17 -->
+            <div class="product-box">
+                <img src="/my-img/products/tshirt1.webp" alt="" class="product-img">
+                <h2 class="product-title">Camouflage Graphics Print-Blue</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+               </br>
+                <span class="price">₹535.08</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 18 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt2.webp" alt="" class="product-img">
+                <h2 class="product-title">Coconut Trees Graphics-White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹611.78</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 19 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt3.webp" alt="" class="product-img">
+                <h2 class="product-title">T-Shirt Dino Print-Green&Bright White </h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹767.08</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 20 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt4.webp" alt="" class="product-img">
+                <h2 class="product-title">Paw Patrol Print T-Shirt White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹557.68</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 21 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt5.webp" alt="" class="product-img">
+                <h2 class="product-title">T-Shirt with Van Graphics Print-White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹489.75</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 22 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt6.webp" alt="" class="product-img">
+                <h2 class="product-title"> Mummas Boy Text Printed Tee-White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹455.67</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 23 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt7.webp" alt="" class="product-img">
+                <h2 class="product-title">T-Shirt Jellyfish Graphics-Yellow</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹479.90</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 24 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt8.webp" alt="" class="product-img">
+                <h2 class="product-title">T-Shirt with Giraffe Graphics-Grey</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹546.74</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 25 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt9.webp" alt="" class="product-img">
+                <h2 class="product-title">Printed Text-Black</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹589.43</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 26 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt10.webp" alt="" class="product-img">
+                <h2 class="product-title"> Text Printed Tee-Grey</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹499.08</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 27 -->
+             <div class="product-box">
+                <img src="/my-img/products/tshirt11.webp" alt="" class="product-img">
+                <h2 class="product-title">Jersey T-Shirt</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹500.67</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 28 -->
+            <div class="product-box">
+                <img src="/my-img/products/tshirt12.webp" alt="" class="product-img">
+                <h2 class="product-title"> Holi Text Tee-White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹468.09</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+
+            <!-- Box 29 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear1.webp" alt="" class="product-img">
+                <h2 class="product-title">Sneaker Booties</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹653.76</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 30 -->
+             <div class="product-box">
+                <img src="/my-img/products/footwear2.webp" alt="" class="product-img">
+                <h2 class="product-title">Casual Shoes</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹579.43</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 31 -->
+             <div class="product-box">
+                <img src="/my-img/products/footwear3.webp" alt="" class="product-img">
+                <h2 class="product-title">Shoes Style Booties</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹611.23</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 32 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear4.webp" alt="" class="product-img">
+                <h2 class="product-title">Star Design Booties</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹679.01</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 33 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear5.webp" alt="" class="product-img">
+                <h2 class="product-title">Sneaker Style Booties-Navy Blue</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹689.76</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 34 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear6.webp" alt="" class="product-img">
+                <h2 class="product-title">Solid Velcro Closure Booties-Black</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹599.15</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 35 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear7.webp" alt="" class="product-img">
+                <h2 class="product-title">Denim Velcro Booties-Blue</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹610.66</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 36 -->
+            <div class="product-box">
+                <img src="/my-img/products/footwear8.webp" alt="" class="product-img">
+                <h2 class="product-title">Car Sneaker Booties- CheeryRed&White</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹746.27</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 37 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy1.webp" alt="" class="product-img">
+                <h2 class="product-title">Saregama Carvaan-Baby Music Player</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹1890</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 38 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy2.webp" alt="" class="product-img">
+                <h2 class="product-title">Little Zoo House-Multicolour</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                <span class="price">₹1789</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 39 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy3.webp" alt="" class="product-img">
+                <h2 class="product-title">Tricycle with Push Handle & Foldable Canopy</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹2990</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 40 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy4.webp" alt="" class="product-img">
+                <h2 class="product-title">Projector Flashlight Torch</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                </br>
+                <span class="price">₹3210</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 41 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy5.webp" alt="" class="product-img">
+                <h2 class="product-title">Remote Control Twisting Stunt Car</h2>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <span class="price">₹3000</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 42 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy6.webp" alt="" class="product-img">
+                <h2 class="product-title">Press & Play Elephant Spinner</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                
+                <span class="price">₹2985</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 43 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy9.webp" alt="" class="product-img">
+
+                <h2 class="product-title">Baby Lion Soft Toy Yellow-Height 25cm</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                
+                <span class="price">₹985.89</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 44 -->
+             <div class="product-box">
+                <img src="/my-img/products/toy8.webp" alt="" class="product-img">
+
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+                
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                <h2 class="product-title">Big Blocks Pack-80 solid shapes</h2>
+                <span class="price">₹999.79</span>
+                
+            </div>
+
+            <!-- Box 45 -->
+            <div class="product-box">
+                <img src="/my-img/products/food1.webp" alt="" class="product-img">
+
+                <h2 class="product-title">NAN PRO POWDER</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                
+                <span class="price">₹567.55</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 46 -->
+            <div class="product-box">
+                <img src="/my-img/products/food2.webp" alt="" class="product-img">
+
+                <h2 class="product-title">TIMIOS-PORRIDGE</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+                
+                <span class="price">₹489.77</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 47 -->
+            <div class="product-box">
+                <img src="/my-img/products/food3.webp" alt="" class="product-img">
+
+                <h2 class="product-title">NESTLE-BABY CEREAL</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+                
+                <span class="price">₹566.43</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 48 -->
+            <div class="product-box">
+                <img src="/my-img/products/food4.jpg" alt="" class="product-img">
+
+                <h2 class="product-title">Enfamil-A With DHA</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </br>
+              
+                <span class="price">₹478.87</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 49 -->
+            <div class="product-box">
+                <img src="/my-img/products/food5.webp" alt="" class="product-img">
+                <h2 class="product-title">TIMIOS-Nut Powder</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+                <span class="price">₹477.89</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 50 -->
+            <div class="product-box">
+                <img src="/my-img/products/food6.webp" alt="" class="product-img">
+                <h2 class="product-title">WHOLE GRAIN SNACKS</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+                <span class="price">₹476.74</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 51 -->
+            <div class="product-box">
+                <img src="/my-img/products/food7.webp" alt="" class="product-img">
+                <h2 class="product-title">ZOOKERS-BISCUITS</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+                <span class="price">₹446.87</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 52 -->
+            <div class="product-box">
+                <img src="/my-img/products/food8.webp" alt="" class="product-img">
+                <h2 class="product-title">EASUM-BABY CEREAL</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+                <span class="price">₹512.60</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 53 -->
+             <div class="product-box">
+                <img src="/my-img/products/care1.webp" alt="" class="product-img">
+                <h2 class="product-title"> Stroller with Handle & Mosquito Net </h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+                <span class="price">₹2627.40</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 54 -->
+             <div class="product-box">
+                <img src="/my-img/products/care2.webp" alt="" class="product-img">
+                <h2 class="product-title">Baby Walker With anti Fall Protection</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+                <span class="price">₹2172.90</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 55 -->
+             <div class="product-box">
+                <img src="/my-img/products/care3.webp" alt="" class="product-img">
+                <h2 class="product-title">Carry Cot With Rocking Base-Pink</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹2395.89</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 56 -->
+             <div class="product-box">
+                <img src="/my-img/products/care4.webp" alt="" class="product-img">
+                <h2 class="product-title">R for Rabbit 14 Inch Vroom Bicycle-Blue</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹2253.88</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+             <!-- Box 57 -->
+             <div class="product-box">
+                <img src="/my-img/products/care5.webp" alt="" class="product-img">
+                <h2 class="product-title">Carry Cot With Rocking Base-Black</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹2631.41</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 58 -->
+            <div class="product-box">
+                <img src="/my-img/products/care6.webp" alt="" class="product-img">
+                <h2 class="product-title">Recline Folding Baby High Chair</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹3891.77</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 59 -->
+            <div class="product-box">
+                <img src="/my-img/products/care7.webp" alt="" class="product-img">
+                <h2 class="product-title">Baby Walker with Rocking Wheels</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹1894.56</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 60 -->
+            <div class="product-box">
+                <img src="/my-img/products/care8.webp" alt="" class="product-img">
+                <h2 class="product-title">Newborn Baby Carrier-Heather Grey</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹1954.99</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 61 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety1.webp" alt="" class="product-img">
+                <h2 class="product-title">Anti-Mosquito Spray</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹206.74</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 62 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety2.webp" alt="" class="product-img">
+                <h2 class="product-title">Cold Relief Babyrub</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹230.67</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 63 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety3.webp" alt="" class="product-img">
+                <h2 class="product-title">Wash Pouch</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹295</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 64 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety4.webp" alt="" class="product-img">
+                <h2 class="product-title">Anti-Mosquito Pack</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹235.16</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 65 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety8.webp" alt="" class="product-img">
+                <h2 class="product-title">Babybrush Pack</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹120.89</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 66 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety6.webp" alt="" class="product-img">
+                <h2 class="product-title">Baby Face Mask Pack</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹156.45</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 67 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Pigeon-Toothpaste</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹100.67</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Box 68 -->
+            <div class="product-box">
+                <img src="/my-img/products/safety7.webp" alt="" class="product-img">
+                <h2 class="product-title">Thin Cotton Buds</h2>
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i></br>
+
+
+                <span class="price">₹200.23</span>
+                <i class='bx bx-shopping-bag add-cart' id="cart-icon"></i>
+            </div>
+     </div>
+
+    </section>
+
+    <!-- Link to JS -->
+    <script src="/main.js"></script>
+
+
+</body>
+</html>
